@@ -1,0 +1,177 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Initialize Owl Carousel
+            var owl = $('.owl-carousel').owlCarousel({
+                loop: false,
+                stagePadding: 15,
+                margin: 10,
+                nav: true,
+                navText: ['<span class="uk-margin-small-right uk-icon black-icon" uk-icon="icon: chevron-left"></span>', '<span class="uk-margin-small-left uk-icon black-icon" uk-icon="icon: chevron-right"></span>'],
+                direction: 'horizontal',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    640: {
+                        items: 2
+                    },
+                    960: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    },
+                    1600: {
+                        items: 5
+                    }
+                }
+            });
+
+            function slideCarousel() {
+                owl.trigger('next.owl.carousel'); // Trigger next slide
+            }
+
+            // Add click event listeners to the navigation buttons
+            $(document).on('click', '.owl-next', function(e){
+                slideCarousel(); // Trigger continuous sliding on next button click
+            });
+
+            $(document).on('click', '.owl-prev', function(e){
+                owl.trigger('prev.owl.carousel'); // Trigger previous slide on prev button click
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="logo"> <img src="./asset/logo.svg" alt="abhishek"></div>
+            <ul class="navlinks">
+                <li>
+                    <a href="https://www.linkedin.com/company/cybercoder-technology/" target="_blank">ABOUT</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/cybercoder-technology/" target="_blank">OUR PRODUCT</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/cybercoder-technology/" target="_blank">CONTACT</a>
+                </li>
+            </ul>
+        </section>
+        <section class="banner">
+            <img src="./asset/Header Image.jpg" alt="abhishek">
+            <div class="salesbanner">
+                <p>Sales UP to 70% off</p>
+                <button class="shopbutton"><span>shop now</span></button>
+            </div>
+        </section>
+        <section class="elivate_section">
+            <h6>Elevate Your Game:</h6>
+            <h5>Discover the Latest in Sport Fashion </h5>
+            <h4> Welcome to your ultimate destination for sport fashion. At [cybercoder technology abhishek], we bring
+                you the perfect
+                blend of performance and style, ensuring you look and feel your best whether you're hitting the gym, the
+                track, or the streets. Explore our curated collections of activewear, footwear, and accessories, all
+                designed to keep you at the top of your game. Join us in redefining sport fashion and unleash your full
+                potential with gear that matches your ambition.</h4>
+        </section>
+        <section class="redefine">
+            <div class="image_part">
+                <div class="backgredient">
+                    <div class="ladyimage"> <img src="./asset/image.jpg" alt="abhishek"></div>
+                </div>
+            </div>
+            <div class="contentpart">
+                <h5>Redefine Your Workout <span>Wardrobe with Trendsetting Gear </span></h5>
+                <p>From vibrant, bold patterns to sleek, minimalist designs, we have something to match every personal
+                    style <br> and fitness goal. Our commitment to quality means you can rely on our gear to withstand
+                    even the toughest <br> workouts while keeping you looking effortlessly stylish. Elevate your fitness
+                    routine with apparel and <br> accessories that are as dynamic and resilient as you are.
+                    <br> <br> <br> From vibrant, bold patterns to sleek, minimalist designs, we have something to match
+                    every personal style <br> and fitness goal. Our commitment to quality means you can rely on our gear
+                    to withstand even the toughest <br> workouts while keeping you looking effortlessly stylish. Elevate
+                    your fitness routine with apparel and <br > accessories that are as dynamic and resilient as you are.
+                </p>
+            </div>
+        </section>
+        <section class="newproduct">
+            <h6> New Products</h6>
+            <div class="product_item">
+                <div class="uk-margin"></div>
+                <div class="uk-section">
+                    <div class="owl-carousel owl-theme">
+                     
+                        <div class="item">
+                            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                                <h3 class="uk-card-title"><div class="cardIamge"> <img src="./asset/shoes.jpg" alt="abhishek">  </div></h3>
+                               <div class="product_desc"> <h5>Product Title</h5> <h4>€100.00 <span class="new_price"> €80.00</span> </h4></div>
+                            </div>
+                        </div>
+
+
+                          <div class="item">
+                            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                                <h3 class="uk-card-title"><div class="cardIamge"> <img src="./asset/shoes.jpg" alt="abhishek">  </div></h3>
+                                <div class="product_desc"> <h5>Product Title</h5> <h4>€100.00 <span class="new_price"> €80.00</span> </h4></div>
+                            </div>
+                            </div>
+                            
+                          <div class="item">
+                            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                                <h3 class="uk-card-title"><div class="cardIamge"> <img src="./asset/shoes.jpg" alt="abhishek">  </div></h3>
+                                <div class="product_desc"> <h5>Product Title</h5> <h4>€100.00 <span class="new_price"> €80.00</span> </h4></div>
+                            </div>
+                            </div>
+
+                            
+                          <div class="item">
+                            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                                <h3 class="uk-card-title"><div class="cardIamge"> <img src="./asset/shoes.jpg" alt="abhishek">  </div></h3>
+                                <div class="product_desc"> <h5>Product Title</h5> <h4>€100.00 <span class="new_price"> €80.00</span> </h4></div>
+                            </div>
+                            </div>
+
+
+                            
+                          <div class="item">
+                            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                                <h3 class="uk-card-title"><div class="cardIamge"> <img src="./asset/shoes.jpg" alt="abhishek">  </div></h3>
+                                <div class="product_desc"> <h5>Product Title</h5> <h4>€100.00 <span class="new_price"> €80.00</span> </h4></div>
+                            </div>
+                            </div>
+                        </div>
+                       
+
+
+                          
+                        
+
+
+                         
+                        
+                       
+
+                      
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+

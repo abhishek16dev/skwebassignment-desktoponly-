@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navlinks {
+    display: flex;
+
+    gap: 56px;
+}
+
+.navlinks li a {
+    text-decoration: none;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #404544;
+    font-weight: 400;
+    font-family: "Manrope";
+
+}
+
+.logo {
+    width: 62px;
+    height: 64px;
+}
+
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    padding: 29px 157px 42px 129px;
+}
+
+.banner {
+    width: 100%;
+    height: 805px;
+    position: relative;
+}
+
+.salesbanner {
+
+    position: absolute;
+    width: 845px;
+    height: 469px;
+    border-top-right-radius: 235px;
+    border-bottom-right-radius: 235px;
+    background-image: linear-gradient(90deg, #00ffa7 0%, #0e4dfd 100%);
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1903px;
+
+}
+
+.salesbanner p {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Manrope";
+    text-transform: uppercase;
+
+
+}
+
+.shopbutton {
+    width: 307px;
+    height: 88px;
+    border-radius: 44px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+
+.shopbutton span {
+    font-size: 30px;
+    color: #1d2c46;
+    font-weight: 800;
+    font-family: "Manrope";
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.elivate_section {
+    margin-top: 118px;
+    padding: 0 157px 0 129px;
+}
+
+.elivate_section h6 {
+    font-size: 60px;
+    color: #1d2c46;
+    font-weight: 800;
+    font-family: "Manrope";
+}
+
+.elivate_section h5 {
+    margin-top: 36px;
+    font-size: 30px;
+    color: #2b2b2b;
+    font-weight: 400;
+    font-family: "Manrope";
+}
+
+.elivate_section h4 {
+    max-width: 1070px;
+    width: 100%;
+    margin-top: 48px;
+    height: 93px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Manrope";
+}
+.redefine{
+    margin-top: 128px;
+    margin-bottom: 222px;
+    display: flex;
+justify-content: space-between;
+    align-items: center;
+    padding: 0px 157px 0px 129px;
+}
+
+.contentpart h5{
+    font-size: 32px;
+color: #1d2c46;
+font-weight: 800;
+font-family: "Manrope";
+}
+.contentpart h5 span{
+    font-weight: 400; 
+}
+
+.contentpart{
+  width: calc(100% - 648px);
+  /* padding-right: 200px; */
+}
+.contentpart p{
+ margin-top: 50px;  
+height: 322px;
+font-size: 17px;
+line-height: 30px;
+color: #000000;
+font-weight: 400;
+font-family: "Manrope";
+text-align: left;
+}
+
+.ladyimage{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+.ladyimage img{
+
+width:529px;
+height:792px;
+
+}
+.backgredient{
+width: 535px;
+height: 777px;
+background-image: linear-gradient(0deg, #00ffa7 0%, #0e4dfd 100%);
+position: relative;
+margin-left: 35px;
+
+}
+
+.image_part{
+    width: 544px;
+    
+   
+}
+
+.newproduct{
+    margin-top: 222px;
+    
+    
+    padding: 0px 157px 0px 129px;
+}
+.newproduct h6{
+    font-size: 60px;
+color: #1d2c46;
+font-weight: 800;
+font-family: "Manrope";
+}
+.product_item{
+    margin-bottom: 129px;
+}
+
+
+/* slider css */
+
+.uk-section {
+    /* background-color: #666 */
+  }
+  .owl-carousel {
+    position: relative;
+    margin-top: 30px;
+  }
+  .owl-nav {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+  }
+  .uk-card-primary {
+    border-radius: 8px;
+  }
+  h3 {
+    margin-top: 10px
+  }
+  .uk-card > :last-child {
+    margin-top:0;
+    margin-bottom: 10px
+  }
+  p {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .owl-next {
+    background: #3286f0;
+  }
+  .owl-theme .owl-nav [class*='owl-'] {
+   border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+  .owl-dots {
+    margin-top: 30px;
+  }
+  .uk-card-title {
+    padding-bottom: 20px
+  }
+
+  .owl-stage{
+    display: flex;
+    
+        width: unset !important;
+        gap: 110px;
+    
+  }
+  .owl-dots {
+    display: none;
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 0px;
+  
+    right: 0px !important;
+    left: unset;
+    display: flex;
+    gap: 10px;
+}
+.item{
+    margin-top: 40px;
+}
+.owl-prev,.owl-next{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.owl-prev::after{
+    position: absolute;
+    content: "\25C2";
+   /* top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%); */
+   font-weight: 800;
+ 
+
+}
+
+.owl-next::before{
+
+    position: absolute;
+    content: "\25B8";
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+   font-weight: 800;
+  
+ } 
+ .cardIamge img{
+    width: 401px;
+    height: 286px;
+    box-shadow: 0 0 50px #ccc;
+ }
+ .product_desc{
+    margin-top: 48px;
+ }
+ .product_desc{
+    display: flex;
+    justify-content: space-between;
+ }
+ .product_desc h5{
+    font-size: 20px;
+color: #1d2c46;
+font-weight: 800;
+font-family: "Manrope";
+ }
+ 
+ .product_desc h4{
+    font-size: 18px;
+letter-spacing: 0px;
+text-transform: uppercase;
+color: #000000;
+font-weight: 400;
+font-family: "Montserrat";
+position: relative;
+ }
+ .product_desc h4::after{
+    content: '\005C';
+    position: absolute;
+ ;
+    right: 17px;
+    top: -34px;
+    font-size: 77px;
+    transform: rotate(99deg);
+
+ }
+ .owl-item{
+    width: unset !important;
+ }
+ .new_price{
+    opacity: 0.502;
+font-size: 12px;
+letter-spacing: 0px;
+text-transform: uppercase;
+color: #000000;
+font-weight: 400;
+font-family: "Montserrat";
+position: absolute;
+top: -11px;
+right: 0;
+ }
+
+
